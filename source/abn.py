@@ -46,7 +46,7 @@ def render_file( source, all_keys ):
 					last_header = line
 					print last_header
 				pcode = vals.get('Postcode', '')
-				if vals.get('State','') == 'SA' and (pcode == '5000' or pcode == '5006'):
+				if vals.get('State','') == 'SA':
 					line = ''
 					delim = ''
 					for col in all_keys:
