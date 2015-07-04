@@ -1,6 +1,45 @@
 # compute business duration records
 
 import csv
+import sys
+
+for arg in sys.argv:
+	if arg == "-a":
+		all = True
+	else:
+		all = False
+
+	if arg == "-n":
+		known_start = True
+	else:
+		known_start = False
+
+	if arg == "-c":
+		current = True
+	else:
+		current = False
+
+	if arg == "-i":
+		inactive = True
+	else:
+		inactive = False
+
+	if arg == "-o":
+		old = True
+	else:
+		old = False
+
+	if arg == '-h':
+		print "usage: get_business.py [-a] [-n] [-c] [i] [-o]"
+		print ""
+		print " where:"
+		print "    -a -> all"
+		print "    -n -> new businesses (known start date)"
+		print "    -c -> current businesses (still active)"
+		print "    -i -> inactive (closed)"
+		print "    -o -> old busness (no start date given)"
+		exit(0)
+
 
 businesses = {}
 header = {}
@@ -42,6 +81,26 @@ for abn in businesses.keys():
 		yr = int(ey[:4])
 		endyr = float(yr) + float(ey[5:6])/12.0
 	else:
-		endyr = 2015.0 + 7.0/12.0
-	print b.get('Postcode') + "," + b.get('ABN') + "," + repr(beginyr) + "," + repr(endyr)
+		endyr = 0.0
+
+	toprint = False
+	if all:
+		toprint = True
+
+	if endyr == 0.0 and current:
+		toprint = True
+
+	if endyr > 0.0 and inactive:
+		toprint = True
+
+	if beginyr > 0.0 and known_start:
+		toprint = True
+
+	if beginyr == 0.0 and old:
+		toprint = True
+
+	if toprint:
+		if endyr == 0.0:
+			endyr = 2015.0 + 7.0/12.0
+		print b.get('Postcode') + "," + b.get('ABN') + "," + repr(beginyr) + "," + repr(endyr)
 

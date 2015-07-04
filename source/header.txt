@@ -1,0 +1,1 @@
+ABN	ABNStatus	ABNStatusFromDate	ABR	ASICNumber	AddressDetails	BusinessAddress	DGR	EntityType	EntityTypeInd	EntityTypeText	ExtractTime	FamilyName	FileSequenceNumber	GST	GivenName	IndividualName	LegalEntity	MainEntity	NameTitle	NonIndividualName	NonIndividualNameText	OtherEntity	Postcode	RecordCount	State	Transfer	TransferInfo
