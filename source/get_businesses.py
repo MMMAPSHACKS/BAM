@@ -3,7 +3,17 @@
 import csv
 import sys
 
+fname = "sa.txt" # default file name
+argn=0
 for arg in sys.argv:
+	argn += 1
+	if (argn == 1):
+		continue
+
+	if arg[0:1] != "-":
+		fname = str(arg)
+		continue
+
 	if arg == "-a":
 		all = True
 	else:
@@ -28,9 +38,9 @@ for arg in sys.argv:
 		old = True
 	else:
 		old = False
-
+	
 	if arg == '-h':
-		print "usage: get_business.py [-a] [-n] [-c] [i] [-o]"
+		print "usage: get_business.py [-a] [-n] [-c] [i] [-o] [filename]"
 		print ""
 		print " where:"
 		print "    -a -> all"
@@ -38,13 +48,16 @@ for arg in sys.argv:
 		print "    -c -> current businesses (still active)"
 		print "    -i -> inactive (closed)"
 		print "    -o -> old busness (no start date given)"
+		print "    filename -> a data file with at least an ABN column"
 		exit(0)
+	
 
 
+# load asic business register/deregister dates 
 asic = {}
 asic_header = {}
 rownum = 0
-with open('names.csv', 'rb') as f:
+with open('names.txt', 'rb') as f:
 	rdr = csv.reader(f, delimiter='\t')
 	for row in rdr:
 		rownum += 1
@@ -64,7 +77,8 @@ with open('names.csv', 'rb') as f:
 businesses = {}
 header = {}
 rownum = 0
-with open('sa.txt', 'rb') as f:
+
+with open(fname, 'rb') as f:
 	rdr = csv.reader(f, delimiter='\t')
 	for row in rdr:
 		rownum += 1
@@ -112,23 +126,17 @@ for abn in businesses.keys():
 		endyr = float(yr) + float(ey[4:6])/12.0
 	else:
 		endyr = 0.0
-
 	toprint = False
 	if all:
 		toprint = True
-
 	if endyr == 0.0 and current:
 		toprint = True
-
 	if endyr > 0.0 and inactive:
 		toprint = True
-
 	if beginyr > 0.0 and known_start:
 		toprint = True
-
 	if beginyr == 0.0 and old:
 		toprint = True
-
 	if toprint:
 		if endyr == 0.0:
 			endyr = 2015.0 + 7.0/12.0
