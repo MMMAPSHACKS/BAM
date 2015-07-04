@@ -29,6 +29,13 @@ def render_file( source, all_keys ):
 			#print 'E ' + elem.tag, elem.attrib, elem.text
 			depth -= 1
 			vals[elem.tag] = elem.text
+			if elem.tag == 'ABN':
+				if all_keys.count('ABNStatus') == 0:
+					all_keys.append('ABNStatus')
+				vals['ABNStatus'] = elem.attrib['status']
+				if all_keys.count('ABNStatusFromDate') == 0:
+					all_keys.append('ABNStatusFromDate')
+				vals['ABNStatusFromDate'] = elem.attrib['ABNStatusFromDate']
 			if depth == 1:
 				line = ''
 				delim = ''
@@ -61,7 +68,12 @@ def render_file( source, all_keys ):
 #	print child.tag, child.attrib
 
 
-all_keys = []
+all_keys = [
+	"ABN","ABNStatus","ABNStatusFromDate","ABR","ASICNumber","AddressDetails",
+	"BusinessAddress","DGR","EntityType","EntityTypeInd","EntityTypeText",
+	"ExtractTime","FamilyName","FileSequenceNumber","GST","GivenName","IndividualName",
+	"LegalEntity","MainEntity","NameTitle","NonIndividualName","NonIndividualNameText",
+	"OtherEntity","Postcode","RecordCount","State","Transfer","TransferInfo" ]
 n = 0
 for arg in sys.argv:
 	n += 1
