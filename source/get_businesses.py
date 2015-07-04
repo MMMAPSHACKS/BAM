@@ -17,13 +17,14 @@ with open('sa.txt', 'rb') as f:
 		else:
 			abn = row[ header['ABN'] ]
 			if not (abn in businesses):
-				#print "adding " + abn
 				businesses[abn] = { 'ABN':abn }
-				businesses[abn]['Postcode'] = row[ header['Postcode'] ]
-				if row[ header['ABNStatus'] ] == 'ACT':
-					businesses[abn]['StartYear'] = row[ header['ABNStatusFromDate'] ][:6]
-				else:
-					businesses[abn]['EndYear'] = row[ header['ABNStatusFromDate'] ][:6]
+			businesses[abn]['Postcode'] = row[ header['Postcode'] ]
+			if row[ header['ABNStatus'] ] == 'ACT':
+				businesses[abn]['StartYear'] = row[ header['ABNStatusFromDate'] ][:6]
+			elif row[ header['ABNStatus'] ] == 'CAN':
+				businesses[abn]['EndYear'] = row[ header['ABNStatusFromDate'] ][:6]
+			else:
+				print abn + " has unknown status " + row[ header['ABNStatus'] ]
 
 print "Postcode,ABN,StartYear,EndYear"
 for abn in businesses.keys():
