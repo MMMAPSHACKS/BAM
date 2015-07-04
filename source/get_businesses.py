@@ -41,6 +41,26 @@ for arg in sys.argv:
 		exit(0)
 
 
+asic = {}
+asic_header = {}
+rownum = 0
+with open('names.csv', 'rb') as f:
+	rdr = csv.reader(f, delimiter='\t')
+	for row in rdr:
+		rownum += 1
+		if rownum == 1:
+			colnum = 0
+			while colnum < len(row):
+				asic_header[ row[colnum] ] = colnum
+				colnum += 1
+		else:
+			abn = row[ asic_header['ABN'] ]
+			if not (abn in asic):
+				asic[abn] = { 'ABN':abn }
+			asic[abn]['ASIC_Start'] = row[ asic_header['Date of Registration'] ]
+			asic[abn]['ASIC_Close'] = row[ asic_header['Date of Cancellation'] ]
+			asic[abn]['ASIC_Status'] = row[ asic_header['Business Name Status'] ]
+
 businesses = {}
 header = {}
 rownum = 0
@@ -57,6 +77,16 @@ with open('sa.txt', 'rb') as f:
 			abn = row[ header['ABN'] ]
 			if not (abn in businesses):
 				businesses[abn] = { 'ABN':abn }
+				if (abn in asic):
+					b = asic.get(abn);
+					st = b.get('ASIC_Start')
+					en = b.get('ASIC_Close')
+					if (len(st)==10):
+						#print "asic start: "+ st + " "  + str(st[6:10]) +","+ str(st[3:5])
+						businesses[abn]['StartYear'] = str(st[6:10]) + str(st[3:5])
+					if (len(en)==10):
+						#print "asic end: "+ st + " " + str(en[6:10]) +","+ str(en[3:5])
+						businesses[abn]['EndYear'] = str(en[6:10]) + str(en[3:5])
 			businesses[abn]['Postcode'] = row[ header['Postcode'] ]
 			if row[ header['ABNStatus'] ] == 'ACT':
 				businesses[abn]['StartYear'] = row[ header['ABNStatusFromDate'] ][:6]
@@ -72,14 +102,14 @@ for abn in businesses.keys():
 	if 'StartYear' in b:
 		by = b.get('StartYear')
 		yr = int(by[:4])
-		beginyr = float(yr) + float(by[5:6])/12.0
+		beginyr = float(yr) + float(by[4:6])/12.0
 	else:
 		beginyr = 0.0
 
 	if 'EndYear' in b:
 		ey = b.get('EndYear')
 		yr = int(ey[:4])
-		endyr = float(yr) + float(ey[5:6])/12.0
+		endyr = float(yr) + float(ey[4:6])/12.0
 	else:
 		endyr = 0.0
 
