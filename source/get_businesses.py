@@ -42,5 +42,5 @@ for abn in businesses.keys():
 		endyr = float(yr) + float(ey[5:6])/12.0
 	else:
 		endyr = 0.0
-	print b.get('Postcode'),b.get('ABN'),beginyr,endyr
+	print b.get('Postcode') + "," + b.get('ABN') + "," + repr(beginyr) + "," + repr(endyr)
 
