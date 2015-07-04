@@ -21,9 +21,9 @@ with open('sa.txt', 'rb') as f:
 				businesses[abn] = { 'ABN':abn }
 				businesses[abn]['Postcode'] = row[ header['Postcode'] ]
 				if row[ header['ABNStatus'] ] == 'ACT':
-					businesses[abn]['StartYear'] = row[ header['ABNStatusFromDate'] ][:4]
+					businesses[abn]['StartYear'] = row[ header['ABNStatusFromDate'] ][:6]
 				else:
-					businesses[abn]['EndYear'] = row[ header['ABNStatusFromDate'] ][:4]
+					businesses[abn]['EndYear'] = row[ header['ABNStatusFromDate'] ][:6]
 
 print "Postcode,ABN,StartYear,EndYear"
 for abn in businesses.keys():
@@ -31,11 +31,16 @@ for abn in businesses.keys():
 	
 	if 'StartYear' in b:
 		by = b.get('StartYear')
+		yr = int(by[:4])
+		beginyr = float(yr) + float(by[5:6])/12.0
 	else:
-		by = '0'
+		beginyr = 0.0
+
 	if 'EndYear' in b:
 		ey = b.get('EndYear')
+		yr = int(ey[:4])
+		endyr = float(yr) + float(ey[5:6])/12.0
 	else:
-		ey = '2015'
-	print b.get('Postcode'),b.get('ABN'),by,ey
+		endyr = 0.0
+	print b.get('Postcode'),b.get('ABN'),beginyr,endyr
 
