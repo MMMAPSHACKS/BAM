@@ -1,147 +1,366 @@
 Year - Labels,LGA 2013 - Labels,NUMBER OF BUSINESSES - Total number of businesses (no.) (Number),BUSINESS ENTRIES - Total number of business entries (no.) (Number),BUSINESS EXITS - Total number of business exits (no.) (Number)
+2009,Adelaide,14865,1689,1893
+2010,Adelaide,15376,2050,1539
+2011,Adelaide,15180,1375,1571
 2012,Adelaide,15179,1515,1851
 2013,Adelaide,14939,1350,1613
+2009,Adelaide Hills,4036,492,576
+2010,Adelaide Hills,4181,566,420
+2011,Adelaide Hills,4077,411,518
 2012,Adelaide Hills,4059,398,604
 2013,Adelaide Hills,3981,343,456
+2009,Alexandrina,2029,214,289
+2010,Alexandrina,2074,266,221
+2011,Alexandrina,2042,214,246
 2012,Alexandrina,2024,194,284
 2013,Alexandrina,1960,151,238
+2009,Anangu Pitjantjatjara,6,0,0
+2010,Anangu Pitjantjatjara,6,0,0
+2011,Anangu Pitjantjatjara,6,0,0
 2012,Anangu Pitjantjatjara,6,3,0
 2013,Anangu Pitjantjatjara,6,0,0
+2009,Barossa,2187,228,240
+2010,Barossa,2261,257,182
+2011,Barossa,2289,234,207
 2012,Barossa,2292,197,252
 2013,Barossa,2241,181,252
+2009,Barunga West,289,29,28
+2010,Barunga West,293,31,22
+2011,Barunga West,283,23,30
 2012,Barunga West,290,28,31
 2013,Barunga West,291,19,28
+2009,Berri and Barmera,1271,120,104
+2010,Berri and Barmera,1261,102,112
+2011,Berri and Barmera,1205,84,138
 2012,Berri and Barmera,1186,100,119
 2013,Berri and Barmera,1154,76,124
+2009,Burnside,5910,769,807
+2010,Burnside,6167,901,642
+2011,Burnside,6264,813,716
 2012,Burnside,6324,769,799
 2013,Burnside,6186,575,723
+2009,Campbelltown,3336,526,539
+2010,Campbelltown,3483,580,433
+2011,Campbelltown,3464,499,517
 2012,Campbelltown,3433,478,521
 2013,Campbelltown,3354,384,463
+2009,Ceduna,384,33,40
+2010,Ceduna,403,47,24
+2011,Ceduna,412,40,32
 2012,Ceduna,422,43,52
 2013,Ceduna,432,40,42
+2009,Charles Sturt,8072,1269,1248
+2010,Charles Sturt,8307,1289,1052
+2011,Charles Sturt,8379,1183,1114
 2012,Charles Sturt,8359,1078,1211
 2013,Charles Sturt,8095,933,1143
+2009,Clare and Gilbert Valleys,1312,110,120
+2010,Clare and Gilbert Valleys,1350,146,107
+2011,Clare and Gilbert Valleys,1323,107,136
 2012,Clare and Gilbert Valleys,1351,117,149
 2013,Clare and Gilbert Valleys,1337,95,140
+2009,Cleve,307,23,28
+2010,Cleve,307,25,27
+2011,Cleve,304,23,27
 2012,Cleve,304,29,27
 2013,Cleve,300,19,25
+2009,Coober Pedy,159,31,27
+2010,Coober Pedy,151,22,31
+2011,Coober Pedy,146,19,23
 2012,Coober Pedy,137,17,19
 2013,Coober Pedy,145,15,10
+2009,Copper Coast,1048,120,122
+2010,Copper Coast,1058,130,119
+2011,Copper Coast,1033,104,128
 2012,Copper Coast,1030,123,152
 2013,Copper Coast,1014,85,110
+2009,Elliston,215,15,21
+2010,Elliston,213,14,17
+2011,Elliston,211,16,19
 2012,Elliston,212,17,30
 2013,Elliston,216,19,15
+2009,Flinders Ranges,141,13,16
+2010,Flinders Ranges,142,16,16
+2011,Flinders Ranges,151,21,11
 2012,Flinders Ranges,156,18,20
 2013,Flinders Ranges,160,13,13
+2009,Franklin Harbour,225,15,21
+2010,Franklin Harbour,225,19,18
+2011,Franklin Harbour,222,15,19
 2012,Franklin Harbour,222,22,21
 2013,Franklin Harbour,219,16,16
+2009,Gawler,1394,192,213
+2010,Gawler,1445,208,157
+2011,Gawler,1441,171,173
 2012,Gawler,1471,186,195
 2013,Gawler,1362,111,226
+2009,Goyder,603,61,53
+2010,Goyder,598,55,60
+2011,Goyder,594,49,53
 2012,Goyder,605,62,64
 2013,Goyder,568,28,79
+2009,Grant,788,75,77
+2010,Grant,824,95,57
+2011,Grant,804,69,89
 2012,Grant,807,60,70
 2013,Grant,809,62,68
+2009,Holdfast Bay,3170,435,472
+2010,Holdfast Bay,3265,496,399
+2011,Holdfast Bay,3285,463,442
 2012,Holdfast Bay,3331,429,467
 2013,Holdfast Bay,3240,348,473
+2009,Kangaroo Island,712,76,79
+2010,Kangaroo Island,729,87,70
+2011,Kangaroo Island,707,51,73
 2012,Kangaroo Island,697,48,87
 2013,Kangaroo Island,680,48,75
+2009,Karoonda East Murray,205,12,18
+2010,Karoonda East Murray,206,18,13
+2011,Karoonda East Murray,196,11,23
 2012,Karoonda East Murray,197,13,17
 2013,Karoonda East Murray,194,9,14
+2009,Kimba,192,13,19
+2010,Kimba,193,16,16
+2011,Kimba,190,12,16
 2012,Kimba,190,16,19
 2013,Kimba,188,12,14
+2009,Kingston,347,36,42
+2010,Kingston,357,36,27
+2011,Kingston,352,32,36
 2012,Kingston,347,24,36
 2013,Kingston,338,18,32
+2009,Light (RegC),1184,130,131
+2010,Light (RegC),1233,148,97
+2011,Light (RegC),1236,136,132
 2012,Light (RegC),1216,112,150
 2013,Light (RegC),1217,101,135
+2009,Lower Eyre Peninsula,626,60,73
+2010,Lower Eyre Peninsula,627,50,48
+2011,Lower Eyre Peninsula,629,51,51
 2012,Lower Eyre Peninsula,621,49,76
 2013,Lower Eyre Peninsula,626,48,49
+2009,Loxton Waikerie,1290,106,120
+2010,Loxton Waikerie,1315,118,93
+2011,Loxton Waikerie,1276,98,138
 2012,Loxton Waikerie,1262,114,156
 2013,Loxton Waikerie,1245,88,127
+2009,Mallala,704,97,99
+2010,Mallala,725,105,83
+2011,Mallala,722,93,97
 2012,Mallala,720,84,117
 2013,Mallala,690,62,98
+2009,Maralinga Tjarutja,0,0,0
+2010,Maralinga Tjarutja,0,0,0
+2011,Maralinga Tjarutja,0,0,0
 2012,Maralinga Tjarutja,0,0,0
 2013,Maralinga Tjarutja,0,0,0
+2009,Marion,4563,724,752
+2010,Marion,4719,813,656
+2011,Marion,4716,682,684
 2012,Marion,4715,613,797
 2013,Marion,4471,544,769
+2009,Mid Murray,864,66,87
+2010,Mid Murray,864,78,76
+2011,Mid Murray,844,63,81
 2012,Mid Murray,829,61,100
 2013,Mid Murray,819,65,92
+2009,Mitcham,5063,664,762
+2010,Mitcham,5186,749,625
+2011,Mitcham,5229,635,594
 2012,Mitcham,5226,623,800
 2013,Mitcham,5053,477,652
+2009,Mount Barker,2691,364,383
+2010,Mount Barker,2786,377,280
+2011,Mount Barker,2828,346,306
 2012,Mount Barker,2847,288,369
 2013,Mount Barker,2722,215,374
+2009,Mount Gambier,2217,219,259
+2010,Mount Gambier,2288,266,196
+2011,Mount Gambier,2259,215,244
 2012,Mount Gambier,2249,198,221
 2013,Mount Gambier,2223,174,222
+2009,Mount Remarkable,378,28,37
+2010,Mount Remarkable,378,28,29
+2011,Mount Remarkable,369,25,35
 2012,Mount Remarkable,376,33,32
 2013,Mount Remarkable,372,18,31
+2009,Murray Bridge,1398,149,187
+2010,Murray Bridge,1382,137,153
+2011,Murray Bridge,1386,166,166
 2012,Murray Bridge,1429,184,201
 2013,Murray Bridge,1339,117,227
+2009,Naracoorte and Lucindale,1277,137,109
+2010,Naracoorte and Lucindale,1310,130,98
+2011,Naracoorte and Lucindale,1310,97,100
 2012,Naracoorte and Lucindale,1293,93,146
 2013,Naracoorte and Lucindale,1296,87,101
+2009,Northern Areas,650,51,59
+2010,Northern Areas,662,61,49
+2011,Northern Areas,665,50,47
 2012,Northern Areas,659,45,85
 2013,Northern Areas,661,44,63
+2009,Norwood Payneham St Peters,5696,831,700
+2010,Norwood Payneham St Peters,5878,845,663
+2011,Norwood Payneham St Peters,5984,757,651
 2012,Norwood Payneham St Peters,6007,747,725
 2013,Norwood Payneham St Peters,5929,654,729
+2009,Onkaparinga,9418,1315,1524
+2010,Onkaparinga,9574,1421,1261
+2011,Onkaparinga,9608,1294,1256
 2012,Onkaparinga,9442,1142,1618
 2013,Onkaparinga,8995,920,1403
+2009,Orroroo/Carrieton,116,8,12
+2010,Orroroo/Carrieton,116,9,9
+2011,Orroroo/Carrieton,113,8,10
 2012,Orroroo/Carrieton,115,9,9
 2013,Orroroo/Carrieton,114,7,10
+2009,Peterborough,228,18,22
+2010,Peterborough,227,18,19
+2011,Peterborough,222,15,22
 2012,Peterborough,227,20,20
 2013,Peterborough,224,12,19
+2009,Playford,3159,485,542
+2010,Playford,3275,612,493
+2011,Playford,3244,520,544
 2012,Playford,3261,482,609
 2013,Playford,3042,346,537
+2009,Port Adelaide Enfield,7512,1214,1189
+2010,Port Adelaide Enfield,7787,1305,1031
+2011,Port Adelaide Enfield,7853,1166,1100
 2012,Port Adelaide Enfield,7930,1112,1103
 2013,Port Adelaide Enfield,7673,886,1122
+2009,Port Augusta,646,77,95
+2010,Port Augusta,677,93,61
+2011,Port Augusta,673,82,87
 2012,Port Augusta,667,58,94
 2013,Port Augusta,646,67,86
+2009,Port Lincoln,1626,179,192
+2010,Port Lincoln,1634,184,176
+2011,Port Lincoln,1630,169,174
 2012,Port Lincoln,1644,170,209
 2013,Port Lincoln,1615,137,181
+2009,Port Pirie City and Dists,976,104,108
+2010,Port Pirie City and Dists,983,106,102
+2011,Port Pirie City and Dists,976,103,111
 2012,Port Pirie City and Dists,985,94,124
 2013,Port Pirie City and Dists,949,74,115
+2009,Prospect,1731,306,254
+2010,Prospect,1832,315,214
+2011,Prospect,1852,268,248
 2012,Prospect,1849,240,254
 2013,Prospect,1841,214,222
+2009,Renmark Paringa,1052,92,121
+2010,Renmark Paringa,1039,85,97
+2011,Renmark Paringa,1006,85,120
 2012,Renmark Paringa,978,87,114
 2013,Renmark Paringa,960,72,101
+2009,Robe,214,22,26
+2010,Robe,219,22,16
+2011,Robe,216,20,24
 2012,Robe,213,13,23
 2013,Robe,208,14,18
+2009,Roxby Downs,151,36,44
+2010,Roxby Downs,169,42,25
+2011,Roxby Downs,168,29,30
 2012,Roxby Downs,160,20,43
 2013,Roxby Downs,154,19,30
+2009,Salisbury,6603,1163,1270
+2010,Salisbury,6854,1234,985
+2011,Salisbury,6891,1160,1122
 2012,Salisbury,6786,1008,1173
 2013,Salisbury,6485,804,1119
+2009,Southern Mallee,429,28,34
+2010,Southern Mallee,433,34,30
+2011,Southern Mallee,412,22,44
 2012,Southern Mallee,412,26,33
 2013,Southern Mallee,406,20,31
+2009,Streaky Bay,269,19,30
+2010,Streaky Bay,280,30,19
+2011,Streaky Bay,291,33,23
 2012,Streaky Bay,291,29,28
 2013,Streaky Bay,291,24,29
+2009,Tatiara,1087,91,87
+2010,Tatiara,1136,115,66
+2011,Tatiara,1129,83,90
 2012,Tatiara,1125,95,96
 2013,Tatiara,1119,76,91
+2009,Tea Tree Gully,5627,843,944
+2010,Tea Tree Gully,5760,921,786
+2011,Tea Tree Gully,5674,757,842
 2012,Tea Tree Gully,5595,729,971
 2013,Tea Tree Gully,5281,541,851
+2009,The Coorong,805,55,74
+2010,The Coorong,813,67,59
+2011,The Coorong,812,56,57
 2012,The Coorong,801,56,98
 2013,The Coorong,762,34,83
+2009,Tumby Bay,339,32,39
+2010,Tumby Bay,340,22,24
+2011,Tumby Bay,340,26,26
 2012,Tumby Bay,334,24,40
 2013,Tumby Bay,338,26,22
+2009,Unley,5289,754,694
+2010,Unley,5549,858,598
+2011,Unley,5652,763,660
 2012,Unley,5852,763,728
 2013,Unley,5801,624,665
+2009,Victor Harbor,1067,124,171
+2010,Victor Harbor,1072,127,121
+2011,Victor Harbor,1052,115,134
 2012,Victor Harbor,1024,88,144
 2013,Victor Harbor,1007,93,129
+2009,Wakefield,784,76,72
+2010,Wakefield,797,75,64
+2011,Wakefield,769,56,86
 2012,Wakefield,786,74,83
 2013,Wakefield,789,51,65
+2009,Walkerville,781,107,138
+2010,Walkerville,836,131,77
+2011,Walkerville,827,99,108
 2012,Walkerville,823,99,125
 2013,Walkerville,832,96,86
+2009,Wattle Range,1399,114,148
+2010,Wattle Range,1454,149,95
+2011,Wattle Range,1454,128,128
 2012,Wattle Range,1432,118,120
 2013,Wattle Range,1387,82,137
+2009,West Torrens,5063,818,768
+2010,West Torrens,5325,887,624
+2011,West Torrens,5398,761,693
 2012,West Torrens,5433,734,711
 2013,West Torrens,5288,582,725
+2009,Whyalla,864,136,157
+2010,Whyalla,877,135,122
+2011,Whyalla,855,110,131
 2012,Whyalla,824,93,133
 2013,Whyalla,767,63,118
+2009,Wudinna,255,20,24
+2010,Wudinna,253,19,22
+2011,Wudinna,251,20,22
 2012,Wudinna,251,23,34
 2013,Wudinna,257,22,20
+2009,Yankalilla,490,41,64
+2010,Yankalilla,478,47,58
+2011,Yankalilla,490,48,40
 2012,Yankalilla,475,39,73
 2013,Yankalilla,479,43,47
+2009,Yorke Peninsula,1306,101,129
+2010,Yorke Peninsula,1325,125,104
+2011,Yorke Peninsula,1319,110,115
 2012,Yorke Peninsula,1338,120,143
 2013,Yorke Peninsula,1313,112,148
+2009,Unincorporated SA,338,36,54
+2010,Unincorporated SA,349,51,42
+2011,Unincorporated SA,349,43,44
 2012,Unincorporated SA,360,44,50
 2013,Unincorporated SA,349,23,32
+2009,No usual address,0,0,0
+2010,No usual address,0,0,0
+2011,No usual address,0,0,0
 2012,No usual address,0,0,0
 2013,No usual address,0,0,0
+2009,Unknown SA,2837,204,351
+2010,Unknown SA,2821,210,226
+2011,Unknown SA,2732,180,269
 2012,Unknown SA,2665,277,347
 2013,Unknown SA,1921,102,191
