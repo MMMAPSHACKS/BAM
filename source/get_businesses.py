@@ -5,6 +5,13 @@ import sys
 
 fname = "sa.txt" # default file name
 argn=0
+asic_only = False
+all = False
+known_start = False
+current = False
+inactive = False
+
+old = False
 for arg in sys.argv:
 	argn += 1
 	if (argn == 1):
@@ -14,31 +21,25 @@ for arg in sys.argv:
 		fname = str(arg)
 		continue
 
+	if arg == "-l":
+		asic_only = True
+
 	if arg == "-a":
 		all = True
-	else:
-		all = False
 
 	if arg == "-n":
 		known_start = True
-	else:
-		known_start = False
 
 	if arg == "-c":
 		current = True
-	else:
-		current = False
 
 	if arg == "-i":
 		inactive = True
-	else:
-		inactive = False
 
 	if arg == "-o":
 		old = True
-	else:
-		old = False
-	
+
+
 	if arg == '-h':
 		print "usage: get_business.py [-a] [-n] [-c] [i] [-o] [filename]"
 		print ""
@@ -90,8 +91,8 @@ with open(fname, 'rb') as f:
 		else:
 			abn = row[ header['ABN'] ]
 			if not (abn in businesses):
-				businesses[abn] = { 'ABN':abn }
-				if (abn in asic):
+				if abn in asic:
+					businesses[abn] = { 'ABN':abn }
 					b = asic.get(abn);
 					st = b.get('ASIC_Start')
 					en = b.get('ASIC_Close')
@@ -101,6 +102,11 @@ with open(fname, 'rb') as f:
 					if (len(en)==10):
 						#print "asic end: "+ st + " " + str(en[6:10]) +","+ str(en[3:5])
 						businesses[abn]['EndYear'] = str(en[6:10]) + str(en[3:5])
+				elif asic_only:
+					continue # skip records with no asic entry
+				else:
+					businesses[abn] = { 'ABN':abn }
+
 			businesses[abn]['Postcode'] = row[ header['Postcode'] ]
 			if row[ header['ABNStatus'] ] == 'ACT':
 				businesses[abn]['StartYear'] = row[ header['ABNStatusFromDate'] ][:6]
